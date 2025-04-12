@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Pawan Kumavat</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#qualification__section">Qualification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+           
+        <!-- <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a> -->    
+            </li>
+          </ul>
+        </div>
+     <!--  <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
+          <a
+          href="#contact"
+        
+          style="text-decoration: none;color: #fff;">Contact</a>
+          </button> -->  
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Jameela Rampurawala</span>
+          </h2>
+          <p class="text-muted">
+            I'm A Mobile Application Developer having 6+ years of experience in expertise of
+            creating Native Android Application and Flutter Application with CI/CD & Deployment and Play Store & App Store handling too.
+          </p>
+          <br />
+          <div class="about__info">
+            <div>
+                <span class="about__info-title">06+</span>
+                <span class="about__info-name">Years <br> Experience</span>
+            </div>
+            <div>
+                <span class="about__info-title">15+</span>
+                <span class="about__info-name">Apps Completed <br> Uploaded in Playsotre & App Store</span>
+            </div>
+            <div>
+                <span class="about__info-title">04+</span>
+                <span class="about__info-name">Companies<br>worked</span>
+            </div>
+        </div>
+        <div class="about__info">
+          <button class="c-btn h-btn mt-5 py-3 px-5 rounded-pill">
+          
+            <a
+            href="#contact"
+        
+            style="text-decoration: none;color: #fff;">Contact me</a>
+          </button>
+        </div>
+         
+      
+        <!--<a href="" class="link ms-4 d-none">See My Work</a>-->  
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/manOnTable.svg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Native Android App Development (java/kotlin)</h4>
+              <p class="text-muted">
+               Custom Android app development using native tools like Android studio, Kotlin and java for high performance.
+              </p>
+              <span class="button button--flex button--small button--link services__button">
+              
+                <a class="link">Read More</a>
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+           <!-- <a href="" class="link">Read More</a> -->  
+              <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Native Android App Development (java/kotlin)<br></h4>
+                    <i class="uil uil-times services__modal-close"></i>
+
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>End to End native app development.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Native device feature integration (Camera, Sensors, GPS).</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Firebase integration (Auth, Firestore, Analytics).</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Google Play store deployment.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             </div>  
+            </div>
+          </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/flutter-icon.svg"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Cross Platform App Development with Flutter</h4>
+              <p class="text-muted">
+               Building a high-quality apps for Android and iOS using a single codebase with Flutter and Dart.
+              </p>
+              <span class="button button--flex button--small button--link services__button">
+              
+                <a class="link">Read More</a>
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                  <h4 class="services__modal-title">Cross Platform App Development with Flutter<br></h4>
+                  <i class="uil uil-times services__modal-close"></i>
+
+                  <ul class="services__modal-services grid">
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Custom UI design using Flutter Widgets.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Animations and smooth transitions.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Firebase + Flutter integration.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Publishing apps to both Play Store and App Store.</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>UI/UX Implementation & Prototyping</h4>
+              <p class="text-muted">
+                Translating Figma, Adobe XD or Sketch designs into pixel-perfect Android or Flutter UIs.
+              </p>
+              <span class="button button--flex button--small button--link services__button">
+              
+                <a class="link">Read More</a>
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                  <h4 class="services__modal-title">UI/UX Implementation & Prototyping<br></h4>
+                  <i class="uil uil-times services__modal-close"></i>
+
+                  <ul class="services__modal-services grid">
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Material Design guidelines implementation.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Responsive UI for all screen sizes.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>UI testing and optimization.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Dark/light theme support.</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>API Integration and Backend Connectivity</h4>
+              <p class="text-muted">
+               Secure and efficient integration of REST APIs, GraphQL or real-time database into mobilee apps.
+              </p>
+              <span class="button button--flex button--small button--link services__button">
+              
+                <a class="link">Read More</a>
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                  <h4 class="services__modal-title">API Integration and Backend Connectivity (Retrofit/Volley)<br></h4>
+                  <i class="uil uil-times services__modal-close"></i>
+
+                  <ul class="services__modal-services grid">
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>RESTful API/GraphQL integration.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>JSON parsing and error handling.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Secure authentication (OAuth2, Firebase Auth).</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Cloud storage and file uploads.</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/cloud-computing.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Firebase & Cloud Services Integration</h4>
+              <p class="text-muted">
+               Enhancing mobile apps with scalable cloud feature using Firebase and Google Cloud.
+              </p>
+              <span class="button button--flex button--small button--link services__button">
+              
+                <a class="link">Read More</a>
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                  <h4 class="services__modal-title">Firebase & Cloud Services Integration<br></h4>
+                  <i class="uil uil-times services__modal-close"></i>
+
+                  <ul class="services__modal-services grid">
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Realtime Database setup.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Push notifications (FCM).</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Analytics and Crashlytics.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Cloud functions integration.</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>App Maintenance and Optimization</h4>
+              <p class="text-muted">
+              Ongoing support, bug fixing, and performance tuning for existing Android and Flutter apps.
+              </p>
+              <span class="button button--flex button--small button--link services__button">
+              
+                <a class="link">Read More</a>
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                  <h4 class="services__modal-title">App Maintenance and Optimization<br></h4>
+                  <i class="uil uil-times services__modal-close"></i>
+
+                  <ul class="services__modal-services grid">
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Legacy app upgrades.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Refactoring old codebases (java to kotlin or Flutter migration).</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>App performance monitoring and optimization.</p>
+                      </li>
+
+                      <li class="services__modal-service">
+                          <i class="uil uil-check-circle services__modal-icon"></i>
+                          <p>Crash fixes and updates for new Android versions.</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress kotlin">
+                  <span class="progress-value kotlin-progress">0%</span>
+                </div>
+                <br />
+                <br />
+                <span class="text">Kotlin</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress java">
+                  <span class="progress-value java-progress">0%</span>
+                </div>
+                <br />
+                <br />
+          
+                <span class="text">Java</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress dart">
+                  <span class="progress-value dart-progress">0%</span>
+                </div>
+                <br />
+                <br />
+                <span class="text">Dart</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3  ms-md-0">
+                <div class="circular-progress uiux">
+                  <span class="progress-value uiux-progress">0%</span>
+                </div>
+                <br>
+                <br />
+                <span class="text">UI/UX & Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted">
+            Experience in developing robust, high performance mobile applications using kotlin, java and Dart.
+            </p>
+            <p class="text-muted">
+             Focuses on clean architecture, scalable code and seamless user experience.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="Software developer-Jameela.pdf"
+                download="SampleCV"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+<!-- education and work session starts-->
+<section class="qualification__section" id="qualification__section">
+  <div class="heading text-center pt-5">
+    <small>Qualification</small>
+    <h3>My personal journey</h3>
+  </div>
+  <div class="qualification__container container">
+      <div class="qualification__tabs">
+          <div class="qualification__button button--flex qualification__active" data-target='#education'>
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+            <h3>Education</h3>  
+          </div>
+
+          <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+            <h3>Work</h3>  
+          </div>
+      </div>
+
+      <div class="qualification__sections">
+  <!--==================== QUALIFICATION CONTENT 1 ====================-->
+  <div class="qualification__content qualification__active" data-content id="education">
+   <!--==================== QUALIFICATION 1 ====================--> 
+   <div class="qualification__data">
+       <div>
+           <h3 class="qualification__title">Masters of computer application (MCA)</h3>
+           <span class="qualification__subtitle">St.Xavier's College, Ahmedabad, India</span>
+           <div class="qualification__calendar">
+              <i class="uil uil-calendar-alt"></i>
+              2016 - 2018
+           </div>
+       </div>
+
+       <div>
+           <span class="qualification__rounder"></span>
+           <span class="qualification__line"></span>
+       </div>
+   </div>
+   
+   <!--==================== QUALIFICATION 2 ====================--> 
+   <div class="qualification__data">
+      <div></div>
+      <div>
+         <span class="qualification__rounder"></span>
+         <span class="qualification__line"></span>
+      </div>
+
+      <div>
+          <h3 class="qualification__title">Bachelor of computer application (BCA)</h3>
+          <span class="qualification__subtitle">St.Xavier's College, Ahmedabad, India</span>
+          <div class="qualification__calendar">
+             <i class="uil uil-calendar-alt"></i>
+             2013 - 2016
+          </div>
+      </div>
+  </div> 
+
+  <!--==================== QUALIFICATION 3 ====================--> 
+  <div class="qualification__data">
+      <div>
+          <h3 class="qualification__title">12th</h3>
+          <span class="qualification__subtitle">St.Xavier's School, Ahmedabad, India</span>
+          <div class="qualification__calendar">
+             <i class="uil uil-calendar-alt"></i>
+             2012 - 2013
+          </div>
+      </div>
+
+      <div>
+          <span class="qualification__rounder"></span>
+        <!-- <span class="qualification__line"></span>--> 
+      </div>
+  </div> 
+
+  <!--==================== QUALIFICATION 4 ====================--> 
+ <!--<div class="qualification__data">
+      <div></div>
+      <div>
+          <span class="qualification__rounder"></span>-->
+         <!-- <span class="qualification__line"></span> -->
+      <!--  </div>
+
+        <div>
+            <h3 class="qualification__title">Data Analyst Professional Certification</h3>
+            <span class="qualification__subtitle">Google | Coursera - Online</span>
+            <div class="qualification__calendar">
+               <i class="uil uil-calendar-alt"></i>
+               2021
+            </div>
+        </div>
+  
+        
+    </div>--> 
+  </div>
+  
+  <!--==================== QUALIFICATION CONTENT 2 ====================-->
+  <div class="qualification__content" data-content id="work">
+     <!--==================== WORK 1 ====================--> 
+     <div class="qualification__data">
+      <div>
+          <h3 class="qualification__title">Innobayt Innovative Solutions, Dubai, UAE</h3>
+          <span class="qualification__subtitle">Senior Android Developer (Kotlin) / Flutter Developer</span>
+          <div class="qualification__calendar">
+             <i class="uil uil-calendar-alt"></i>
+             2022 - November 2024
+          </div>
+      </div>
+
+      <div>
+          <span class="qualification__rounder"></span>
+          <span class="qualification__line"></span>
+      </div>
+  </div>
+         <!--==================== WORK 2 ====================--> 
+         <div class="qualification__data">
+          <div></div>
+          <div>
+             <span class="qualification__rounder"></span>
+             <span class="qualification__line"></span>
+          </div>
+ 
+          <div>
+              <h3 class="qualification__title">Virtual Height Pvt Ltd, Ahmedabad, India</h3>
+              <span class="qualification__subtitle">Android Developer / Flutter Developer</span>
+              <div class="qualification__calendar">
+                 <i class="uil uil-calendar-alt"></i>
+                 2020 - 2022
+              </div>
+          </div>
+      </div>
+      <!--==================== WORK 3 ====================--> 
+      <div class="qualification__data">
+          <div>
+              <h3 class="qualification__title">Macademic Solutions, Ahmedabad, India</h3>
+              <span class="qualification__subtitle">Android Developer</span>
+              <div class="qualification__calendar">
+                 <i class="uil uil-calendar-alt"></i>
+                 2019 - 2020
+              </div>
+          </div>
+
+          <div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line"></span>
+          </div>
+      </div>
+      
+      <!--==================== WORK 4 ====================--> 
+      <div class="qualification__data">
+         <div></div>
+         <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+         </div>
+
+         <div>
+             <h3 class="qualification__title">Silverwing Technologies, Ahmedabad, India</h3>
+             <span class="qualification__subtitle">Jr. Android Developer</span>
+             <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+               2017 - 2019
+             </div>
+         </div>
+     </div> 
+
+     <!--==================== WORK 5 ====================--> 
+     <div class="qualification__data">
+         <div>
+             <h3 class="qualification__title">Akash Technolabs</h3>
+             <span class="qualification__subtitle">Trainee</span>
+            <!--<div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2020 - Present
+             </div>--> 
+         </div>
+
+         <div>
+             <span class="qualification__rounder"></span>
+             <!-- <span class="qualification__line"></span> -->
+         </div>
+     </div> 
+
+     </div> 
+   
+     </div>
+  </div>
+</section>
+
+<!-- education and work session ends-->
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">Game</button>
+        <button class="filter-item" data-filter="webapp">Web App</button>
+        <button class="filter-item" data-filter="website">Website</button>
+        <button class="filter-item" data-filter="brand">Brand</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/2048game.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">2048 Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="#" class="link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/currency-converter.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Converter App</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/dictionary.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Dictionary</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/piceditor.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">PicEditor App</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">App</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/tictactoe.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">TicTacToe Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/lang-translator.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Lang Translator</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Web App</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- testimonial section starts  -->
+    <!--<section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>Testimonials</small>
+            <h3>Happy Clients Feedback</h3>-->
+            <!-- here we will use carousel element from bootstrap -->
+         <!--   <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                        consecteaur aeci velit, sed quia non numquam eius modi
+                        tempora incidunt ut lao magnam aliquam quaerat ...
+                      </p>
+                      <h4>Kevin Andrew</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                        consecteaur aeci velit, sed quia non numquam eius modi
+                        tempora incidunt ut lao magnam aliquam quaerat ...
+                      </p>
+                      <h4>Kevin Andrew</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                        consecteaur aeci velit, sed quia non numquam eius modi
+                        tempora incidunt ut lao magnam aliquam quaerat ...
+                      </p>
+                      <h4>Kevin Andrew</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <!-- testimonial ends here -->
+
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3>Blog & Articles</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/2048game.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Pawan Kumavat</small
+              ><span class="ms-3">Mar 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum nece aibus minima veniam.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/currency-converter.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Pawan Kumavat</small
+              ><span class="ms-3">Mar 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum nece aibus minima veniam.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/dictionary.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Pawan Kumavat</small
+              ><span class="ms-3">Mar 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum nece aibus minima veniam.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/2048game.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/currency-converter.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/dictionary.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="home__img">
+            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask0" mask-type="alpha">
+                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                </mask>
+                <g mask="url(#mask0)">
+                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                    <image class="home__blob-img" x="" xlink:href="images/portfolio-image.jpg"/>
+                </g>
+            </svg>
+        </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Al nahda, Dubai.</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+971 509952753</p>
+              <p>+91 8238653553</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p><a href="mailto:7865253jameela@gmail.com">7865253jameela@gmail.com</a></p>
+            </div>
+          </div>
+        <!-- <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>codingpawan.com</p>
+            </div>
+          </div> -->  
+        </div>
+       
+        <!--  <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div> -->
+       
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#qualification__section">Qualification</a>
+       
+        <!--<div class="vr"></div>
+        <a href="#blog">Blog</a>-->
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill dribble">
+          <i class="bi bi-dribbble"></i>
+        </button>
+      
+        <button class="rounded-pill whatsapp" 
+        onclick="window.open('https://www.linkedin.com/in/jameela-rampurawala-626956141', '_blank')">
+        <i class="bi bi-linkedin"></i>
+</button>
+        <button href="" class="rounded-pill behance">
+          <i class="bi bi-github"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2025 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
