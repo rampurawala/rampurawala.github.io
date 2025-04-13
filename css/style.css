@@ -161,6 +161,7 @@ body{
     text-align: center;
     padding: 15px 15px;
     border-radius: 0.7rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
 }
 
 /* skill section starts */
@@ -221,6 +222,9 @@ body{
 }
 
 /* portfolio section starts */
+.portfolio{
+    background-color: #f2f2ff;
+}
 #myBtnContainer{
     margin-bottom: 45px;
 }
@@ -666,6 +670,11 @@ footer .link-group a:hover{
   /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 380px) {
+  .services__modal-title {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding-right: 2.5rem;
+  }
     .container {
         margin-left: auto;
         margin-right: auto;
