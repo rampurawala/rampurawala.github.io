@@ -189,3 +189,13 @@ tabs.forEach((tab) => {
     tab.classList.add("qualification__active");
   });
 });
+
+//close nav when clicked in responsive
+document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
+  item.addEventListener('click', () => {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    if (navbarCollapse.classList.contains('show')) {
+      new bootstrap.Collapse(navbarCollapse).toggle();
+    }
+  });
+});

@@ -456,6 +456,7 @@ footer .link-group a:hover{
     position: relative;
     background-color: #fff;
     padding: 1.5rem;
+    text-align: start;
     border-radius: 0.5rem;
   }
   
