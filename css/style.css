@@ -848,7 +848,7 @@ footer .link-group a:hover{
         text-align: initial;
       }
       .about__info {
-        justify-content: space-between;
+        justify-content: space-evenly;
       }
       .about__buttons {
         justify-content: initial;
