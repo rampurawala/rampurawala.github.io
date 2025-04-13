@@ -127,6 +127,12 @@ let mybutton = document.getElementById("btn-back-to-top");
 window.onscroll = function () {
   scrollFunction();
 };
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 function scrollFunction() {
   if (
     document.body.scrollTop > 20 ||
