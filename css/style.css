@@ -77,7 +77,8 @@ body{
 .c-orange{
     color: #6f34fe;
     font-weight: 700;
-    font-size: 4rem;
+   /* font-size: 4rem;*/
+    font-size: clamp(2.5rem, 5vw, 4rem);
 }
 .home p{
     width: fit-content;
@@ -967,4 +968,9 @@ footer .link-group a:hover{
     .contact__inputs {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
   }
