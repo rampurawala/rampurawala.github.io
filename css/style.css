@@ -1215,13 +1215,15 @@ footer .link-group a:hover{
 
 
 a[href^="tel:"],
-a[href^="mailto:"] {
+a[href^="mailto:"],
+a[href^="https://wa.me"] {
   color: inherit; /* Inherit the text color from the parent element */
   text-decoration: none; /* Remove the underline */
 }
 
 a[href^="tel:"]:hover,
-a[href^="mailto:"]:hover {
+a[href^="mailto:"]:hover,
+a[href^="https://wa.me"]:hover  {
   /* Optional: Add styling on hover for better user feedback */
   color: #007bff; /* Example: Change color on hover */
   text-decoration: underline; /* Example: Add underline on hover */
