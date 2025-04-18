@@ -205,3 +205,106 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
     }
   });
 });
+
+/*let currentImages = [];
+let currentIndex = 0;
+
+function openSlider(images,appName) {
+  currentImages = images;
+  currentIndex = 0;
+  document.getElementById("sliderImage").src = currentImages[currentIndex];
+  document.getElementById("appTitle").textContent = appName;
+  document.getElementById("sliderDialog").showModal();
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % currentImages.length;
+  document.getElementById("sliderImage").src = currentImages[currentIndex];
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+  document.getElementById("sliderImage").src = currentImages[currentIndex];
+}
+let startX = 0;
+
+const sliderImage = document.getElementById("sliderImage");*/
+
+// Touch start
+/*sliderImage.addEventListener("touchstart", function (e) {
+  startX = e.touches[0].clientX;
+});*/
+
+// Touch end
+/*sliderImage.addEventListener("touchend", function (e) {
+  let endX = e.changedTouches[0].clientX;
+  let diff = startX - endX;
+
+  if (diff > 50) {
+    nextImage(); // Swipe left
+  } else if (diff < -50) {
+    prevImage(); // Swipe right
+  }
+});*/
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const readMoreButtons = document.querySelectorAll('.post .read-more-btn'); // More specific selector
+  const imageDialog = document.getElementById('imageDialog');
+  const currentImage = document.getElementById('currentImage');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  const closeButton = document.querySelector('.close-button');
+  let imageList = [];
+  let currentIndex = 0;
+
+  // Function to open the dialog and load images
+  readMoreButtons.forEach(button => {
+    button.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      // Find the parent .post element and get the data-images attribute
+      const postElement = this.closest('.post');
+      if (postElement && postElement.dataset.images) {
+        imageList = postElement.dataset.images.split(',');
+        currentIndex = 0;
+        currentImage.src = imageList[currentIndex];
+        imageDialog.style.display = 'block';
+      } else {
+        console.error("No 'data-images' attribute found on the parent .post element.");
+      }
+    });
+  });
+
+  // Next button functionality
+  nextButton.addEventListener('click', function() {
+    currentIndex++;
+    if (currentIndex >= imageList.length) {
+      currentIndex = 0;
+    }
+    currentImage.src = imageList[currentIndex];
+  });
+
+  // Previous button functionality
+  prevButton.addEventListener('click', function() {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = imageList.length - 1;
+    }
+    currentImage.src = imageList[currentIndex];
+  });
+
+  // Close button functionality
+  closeButton.addEventListener('click', function() {
+    imageDialog.style.display = 'none';
+  });
+
+  // Close the dialog if the user clicks outside the modal
+  window.addEventListener('click', function(event) {
+    if (event.target === imageDialog) {
+      imageDialog.style.display = 'none';
+    }
+  });
+  imageDialog.style.display = 'none';
+});

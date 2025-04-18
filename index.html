@@ -42,11 +42,11 @@
   </head>
   <body>
     <!-- navbar starts 
-     class="navbar navbar-expand-lg navbar-light bg-white sticky-top" 
+     class="navbar navbar-expand-lg navbar-light bg-white static-top" 
     -->
     <nav
       id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white static-top" >
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top" >
       <div class="container-fluid px-5">
         <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
           >Portfolio</a
@@ -565,8 +565,8 @@
   <!--==================== QUALIFICATION CONTENT 1 ====================-->
   <div class="qualification__content qualification__active" data-content id="education">
    <!--==================== QUALIFICATION 1 ====================--> 
-   <div class="qualification__data">
-       <div>
+   <div class="qualification__data" >
+       <div data-aos="slide-right">
            <h3 class="qualification__title">Masters of computer application (MCA)</h3>
            <span class="qualification__subtitle">St.Xavier's College, Ahmedabad, India</span>
            <div class="qualification__calendar">
@@ -582,14 +582,14 @@
    </div>
    
    <!--==================== QUALIFICATION 2 ====================--> 
-   <div class="qualification__data">
+   <div class="qualification__data" >
       <div></div>
       <div>
          <span class="qualification__rounder"></span>
          <span class="qualification__line"></span>
       </div>
 
-      <div>
+      <div data-aos="slide-left">
           <h3 class="qualification__title">Bachelor of computer application (BCA)</h3>
           <span class="qualification__subtitle">St.Xavier's College, Ahmedabad, India</span>
           <div class="qualification__calendar">
@@ -601,7 +601,7 @@
 
   <!--==================== QUALIFICATION 3 ====================--> 
   <div class="qualification__data">
-      <div>
+      <div data-aos="slide-right">
           <h3 class="qualification__title">12th</h3>
           <span class="qualification__subtitle">St.Xavier's School, Ahmedabad, India</span>
           <div class="qualification__calendar">
@@ -641,7 +641,7 @@
   <div class="qualification__content" data-content id="work">
      <!--==================== WORK 1 ====================--> 
      <div class="qualification__data">
-      <div>
+      <div data-aos="slide-right">
           <h3 class="qualification__title">Innobayt Innovative Solutions, Dubai, UAE</h3>
           <span class="qualification__subtitle">Senior Android Developer (Kotlin) / Flutter Developer</span>
           <div class="qualification__calendar">
@@ -663,7 +663,7 @@
              <span class="qualification__line"></span>
           </div>
  
-          <div>
+          <div data-aos="slide-left">
               <h3 class="qualification__title">Virtual Height Pvt Ltd, Ahmedabad, India</h3>
               <span class="qualification__subtitle">Android Developer / Flutter Developer</span>
               <div class="qualification__calendar">
@@ -674,7 +674,7 @@
       </div>
       <!--==================== WORK 3 ====================--> 
       <div class="qualification__data">
-          <div>
+          <div data-aos="slide-right">
               <h3 class="qualification__title">Macademic Solutions, Ahmedabad, India</h3>
               <span class="qualification__subtitle">Android Developer</span>
               <div class="qualification__calendar">
@@ -697,7 +697,7 @@
             <span class="qualification__line"></span>
          </div>
 
-         <div>
+         <div data-aos="slide-left">
              <h3 class="qualification__title">Silverwing Technologies, Ahmedabad, India</h3>
              <span class="qualification__subtitle">Jr. Android Developer</span>
              <div class="qualification__calendar">
@@ -709,7 +709,7 @@
 
      <!--==================== WORK 5 ====================--> 
      <div class="qualification__data">
-         <div>
+         <div data-aos="slide-right">
              <h3 class="qualification__title">Akash Technolabs</h3>
              <span class="qualification__subtitle">Trainee</span>
             <!--<div class="qualification__calendar">
@@ -757,7 +757,7 @@
                 <span class="badge bg-secondary badge-pill">Google map</span>
                 <span class="badge bg-secondary badge-pill mb-2">Firebase</span
                 ><br />
-                <a href="#" class="link">Read More</a>
+                 <!--   <a href="#" class="read-more-btn link">Read More</a>-->
               </div>
             </div>
           </div>
@@ -774,12 +774,12 @@
                 <span class="badge bg-secondary badge-pill">Alarm</span>
                 <span class="badge bg-secondary badge-pill mb-2">Video</span
                 ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+                  <!--   <a href="#" class="read-more-btn link">Read More</a>-->
               </div>
             </div>
           </div>
-          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up" >
+            <div class="card" >
               <img src="images/safefit.png" class="card-img-top" alt="..." />
               <div class="card-body text-center">
                 <h4 class="card-title">Safefit</h4>
@@ -787,10 +787,13 @@
                 <span class="badge bg-secondary badge-pill">Booking</span>
                 <span class="badge bg-secondary badge-pill mb-2">Android</span
                 ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+              <!--  <a href="#" class="read-more-btn link" onclick="openSlider(['images/kumkummandir.png', 'images/safefit.png', 'images/linkmyride.png'],'Safefit'); return false;">Read More</a>-->
+             <!--   <a href="#" class="read-more-btn link">Read More</a>-->
+             
               </div>
             </div>
           </div>
+         
         </div>
         <div class="row justify-content-evenly mt-4 px-4">
           <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
@@ -802,7 +805,8 @@
                 <span class="badge bg-secondary badge-pill">RTL support</span>
                 <span class="badge bg-secondary badge-pill mb-2">Firebase</span
                 ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+                  <!--   <a href="#" class="read-more-btn link">Read More</a>-->
+              
               </div>
             </div>
           </div>
@@ -815,7 +819,8 @@
                 <span class="badge bg-secondary badge-pill">Inventory</span>
                 <span class="badge bg-secondary badge-pill mb-2">School app</span
                 ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+                  <!--   <a href="#" class="read-more-btn link">Read More</a>-->
+            
               </div>
             </div>
           </div>
@@ -832,10 +837,32 @@
                 <span class="badge bg-secondary badge-pill">Java</span>
                 <span class="badge bg-secondary badge-pill mb-2">Multilingual</span
                 ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+                 <!--   <a href="#" class="read-more-btn link">Read More</a>-->
               </div>
             </div>
           </div>
+        </div>
+      <!--  <dialog id="sliderDialog">
+          <div class="slider-wrapper">
+            <button class="close-btn" onclick="sliderDialog.close()">×</button>
+            <h3 id="appTitle" class="app-title">App Name</h3>
+            <img id="sliderImage" src="" alt="App Screenshot" />
+        
+            <div class="nav-buttons">
+              <button onclick="prevImage()">&#10094;</button>
+              <button onclick="nextImage()">&#10095;</button>
+            </div>
+          </div>
+        </dialog>-->
+       
+      </div>
+      <div id="imageDialog" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+     
+          <button class="prev-button">&lt;</button>
+          <img id="currentImage" src="" alt="Screenshot">
+          <button class="next-button">&gt;</button>
         </div>
       </div>
     </section>
@@ -1227,7 +1254,7 @@
     <section class="contact py-5" id="contact">
       <div class="heading text-center">
         <small>Get in Touch</small>
-        <h3>Feel Free to Contact</h3>
+        <h3>Looking Forward to Hearing From You</h3>
       </div>
       <div class="row justify-content-evenly mt-5">
         <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
@@ -1270,8 +1297,8 @@
               <i class="bi bi-telephone-fill"></i>
             </div>
             <div class="col-11">
-              <p>+971 509952753</p>
-              <p>+91 8238653553</p>
+              <p><a href="tel:+971509952753">+971 509952753</a></p>
+              <p><a href="tel:+918238653553">+91 8238653553</a></p>
             </div>
           </div>
           <div class="row justify-content-evenly">
@@ -1378,7 +1405,7 @@
         onclick="window.open('https://www.linkedin.com/in/jameela-rampurawala-626956141', '_blank')">
         <i class="bi bi-linkedin"></i>
 </button>
-        <button href="" class="rounded-pill behance">
+        <button href="" class="rounded-pill behance"  onclick="window.open('https://github.com/rampurawala', '_blank')">
           <i class="bi bi-github"></i>
         </button>
       </div>

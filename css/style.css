@@ -252,6 +252,10 @@ body{
 .post .card{
     border: none;
 }
+.card:hover{
+  border: 2px solid #6f34fe; /* or any color */
+    box-shadow: 0 0 10px rgba(111, 52, 254, 0.3);
+}
 
 /* testimonial section starts */
 .testimonial img:hover{
@@ -666,10 +670,35 @@ footer .link-group a:hover{
     border-bottom: 2px solid #007bff;
   }
   
+/* Navigation Buttons */
+.prev-button,
+.next-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 0.5em 0.5em;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em; 
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  z-index: 1001; /* Ensure they are above modal content */
+}
+
 
   /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 380px) {
+  .prev-button,
+  .next-button {
+    font-size: 1.2em;
+    padding: 0.2em 0.3em;
+  }
   .services__modal-title {
     font-size: 1rem;
     line-height: 1.4;
@@ -756,6 +785,11 @@ footer .link-group a:hover{
   
   /* For medium devices */
   @media screen and (min-width: 568px) {
+    .prev-button,
+  .next-button {
+    font-size: 1.2em;
+    padding: 0.3em 0.4em;
+  }
     .home__content {
       grid-template-columns: max-content 1fr 1fr;
     }
@@ -785,6 +819,11 @@ footer .link-group a:hover{
     }
   
     @media screen and (min-width: 768px) {
+      .prev-button,
+      .next-button {
+        font-size: 1.5em;
+        padding: 0.3em 0.4em;
+      }
       .container {
         margin-left: auto;
         margin-right: auto;
@@ -979,8 +1018,211 @@ footer .link-group a:hover{
       grid-template-columns: repeat(2, 1fr);
     }
   }
-
+ /* @media screen and (max-width: 480px) {
+    dialog[open] {
+      width: 95%;
+      max-height: 90vh;
+    }
+  
+    #sliderImage {
+      max-height: 60vh;
+    }
+  
+    .nav-buttons button {
+      font-size: 2rem;
+    }
+  
+    .close-btn {
+      font-size: 1.8rem;
+    }
+  }*/
   html, body {
     max-width: 100%;
     overflow-x: hidden;
   }
+  /*dialog:not([open]) {
+    display: none;
+  }
+  
+  dialog {
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    text-align: center;
+  
+    /* Fix: center it properly */
+  /*  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+  
+    /* Fix: wrap content, not full width */
+  /*  width: wrap content;
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
+  }
+  
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }*/
+  
+ /* .slider-wrapper {
+    position: relative;
+    padding: 1rem;
+  }*/
+  /*.slider-wrapper {
+    max-width: 90vw;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  #sliderImage {
+    width: 100%;
+    max-width: 350px;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .app-title {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }*/
+  
+  /* Close button */
+  /*.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #555;
+    cursor: pointer;
+  }*/
+  
+  /* Nav buttons */
+  /*.nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+  }*/
+  
+  /*.nav-arrow {
+    background-color: rgba(0, 0, 0, 0.3); /* mid-transparent */
+  /*  color: #fff;
+    border: none;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }*/
+
+  /* Basic Modal Styling */
+
+
+
+
+
+
+/* Basic Modal Styling */
+
+
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+      align-content: space-around;
+}
+.modal-content {
+  display: inline-block; /* Shrink to content and allow text-align: center on parent to work */
+  vertical-align: middle; /* Basic vertical alignment */
+  /* Keep other styles for modal-content */
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative; /* For close button */
+}
+
+
+
+
+.close-button {
+  background-color: #ffffffd6;
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.8;
+  z-index: 1001; /* Ensure it's above modal content */
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  opacity: 1;
+}
+
+/* Image Display */
+#currentImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.next-button {
+  right: 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev-button {
+  left: 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+a[href^="tel:"],
+a[href^="mailto:"] {
+  color: inherit; /* Inherit the text color from the parent element */
+  text-decoration: none; /* Remove the underline */
+}
+
+a[href^="tel:"]:hover,
+a[href^="mailto:"]:hover {
+  /* Optional: Add styling on hover for better user feedback */
+  color: #007bff; /* Example: Change color on hover */
+  text-decoration: underline; /* Example: Add underline on hover */
+}
