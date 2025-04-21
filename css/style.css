@@ -26,6 +26,10 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 /* styling menu icon */
 .nav-menu{
     border: none;
@@ -1036,10 +1040,7 @@ footer .link-group a:hover{
       font-size: 1.8rem;
     }
   }*/
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+ 
   /*dialog:not([open]) {
     display: none;
   }
